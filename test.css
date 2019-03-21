@@ -1,0 +1,52 @@
+/* Responsve design - Maintainable & Scaleable code - Web performance */
+
+/* Reset */
+*,
+*::before,
+*::after {
+   margin: 0;
+   padding: 0;
+   box-sizing: inherit; /* It will inherit the value form body */
+}
+
+/* Everything related to font should be in body */
+/*
+   rem = relitive units
+   To rem: 1.5rem =  1.5 * 16 = 26px NOTE em uses parent element as refrence while rem uses root element
+   For em font the refrence in parent element for length the refrence is current element
+   rem alway uses the root font size as refrence
+   rem is good because it allows you to change just one global settings - If i set the html to 10px the root size of 1rem is 10px
+*/
+
+html {
+   /* set to equal 10px */
+   font-size: 62.5%;
+}
+body {
+   font-family: "Lato", sans-serif;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 1.7;
+   color: #777;
+   padding: 3rem;
+   box-sizing: border-box; /* Border and padding is not added to the total width or height - Without it border and padding is added */
+}
+
+/*
+   BEM = Block - Element - Modifier
+   EXAMPLE:
+   recipe
+   recipe__title
+   recipe__title--blue
+ */
+
+/* Add gradient from left to right bottom */
+
+header {
+   background-image: linear-gradient(
+      to right bottom,
+      rgba(126, 213, 111, 0.7),
+      rgba(40, 180, 131, 0.7) ),
+   url('bla/test.jpg');
+   clip-path: polygon(0 0 , 100% 0, 100% 75vh, 0 100%)
+}

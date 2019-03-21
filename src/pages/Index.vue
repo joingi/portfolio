@@ -1,20 +1,33 @@
 <template>
   <Layout>
-
-    <Hero />
-    <!-- <PostList /> -->
+    <Header />
+    <div class="main home">
+      <h2>Main Home</h2>
+      <!-- <SectionAbout />
+      <SectionContact /> -->
+    </div>
   </Layout>
 </template>
 
 
 <script>
 
-import PostList from '@/components/PostList.vue'
-import Hero from '@/components/Hero.vue'
+import Header from '@/components/Header.vue';
+// import SectionAbout from '@/components/SectionAbout.vue';
+// import SectionContact from '@/components/SectionContact.vue';
 
 export default {
   components: {
-    Hero,
+    Header,
+
   }
 }
 </script>
+
+<style lang="scss" scoped>
+.main {
+  width: 100%;
+  margin: 0 auto;
+}
+
+</style>

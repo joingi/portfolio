@@ -1,0 +1,43 @@
+// When using ::before and ::after you'll always need these three, so we're saving two lines of code every time you use this.
+@mixin pseudo($display: block, $pos: absolute, $content: ''){
+   content: $content;
+   display: $display;
+   position: $pos;
+}
+// Example
+// @mixin pseudo($display: block, $pos: absolute, $content: ''){
+//    content: $content;
+//    display: $display;
+//    position: $pos;
+// }
+
+// We use this for creating scalable elements (usually images / background images) that maintain a ratio.
+@mixin responsive-ratio($x,$y, $pseudo: false) {
+    $padding: unquote( ( $y / $x ) * 100 + '%' );
+    @if $pseudo {
+        &:before {
+            @include pseudo($pos: relative);
+            width: 100%;
+            padding-top: $padding;
+        }
+    } @else {
+        padding-top: $padding;
+    }
+}
+
+// Media queries
+@mixin phone {
+   @media (max-width: 599px) { @content; }
+ }
+ @mixin tablet-up {
+   @media (min-width: 600px) { @content; }
+ }
+ @mixin tablet-landscape-up {
+   @media (min-width: 900px) { @content; }
+ }
+ @mixin desktop-up {
+   @media (min-width: 1200px) { @content; }
+ }
+ @mixin big-desktop-up {
+   @media (min-width: 1800px) { @content; }
+ }
