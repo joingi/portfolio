@@ -1,4 +1,11 @@
 // @import './scss/base/normalize';
-@import './scss/base/vars';
-@import './scss/base/mixin';
+@import './scss/abstracts/functions';
+@import './scss/abstracts/vars';
+@import './scss/abstracts/mixin';
+
 @import './scss/base/base';
+@import './scss/base/animations';
+@import './scss/base/typography';
+@import './scss/base/util';
+
+@import './scss/components/button';
