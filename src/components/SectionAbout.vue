@@ -1,68 +1,38 @@
 <template>
-      <section class="about-home">
-          <div id="item1" class="text-box">
-            <h1>I make websites</h1>
-            <p>Design and development for community site,  branding site or webshops</p>
-            <router-link :to="about">About me -></router-link>
-          </div>
+      <section class="section-about">
+        <div class="u-center-text u-margin-bottom-big">
+          <h2 class="heading-secondary">I make websites</h2>
+        </div>
 
-        <div id="item2" class="image-box"></div>
+        <div class="row">
+         <div class="col-1-of-2">
+            <h3 class="heaading-tertiary u-margin-bottom-small">Living and learning one day at a time</h3>
+            <p class="paragraph">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet nisi quisquam esse similique excepturi voluptatem harum repellendus et provident ut, fugiat corporis soluta nihil, iusto eligendi veritatis quidem id error.
+            </p>
 
+            <h3 class="heaading-tertiary u-margin-bottom-small">Living and learning one day at a time</h3>
+            <p class="paragraph">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet nisi quisquam esse similique excepturi voluptatem harum repellendus et provident ut.
+            </p>
+
+            <a href="#" class="btn-text">About me &rarr;</a>
+         </div>
+         <div class="col-1-of-2">
+           <Composition />
+         </div>
+      </div>
       </section>
 </template>
 
 
-<style lang="scss" scoped>
-.about-home {
-  position: relative;
-  display: grid;
-  grid-template-columns: 60% 40%;
-  margin: 0 auto;
-  padding-top: 3%;
-  min-height: 440px;
-  max-width: 1200px;
-
-   @include phone {
-     grid-template-columns: 1fr;
-   }
-  }
-
-  .text-box {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-left: 40px;
-    background-color: $backGrey;
-
-    @include phone {
-      background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.9)), url('../assets//images/about_code_img.png');
-      background-repeat: no-repeat;
-      background-size: cover;
-    }
-
-    p {
-      max-width: $maxBoxTextWidth;
-      margin-top: 0px;
-      margin-bottom: 36px;
-    }
-
-    a {
-       color: $primaryColor;
-    }
-  }
-  .image-box {
-    background-image: url('../assets//images/about_code_img.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    @include phone {
-      display: none;
-    }
-  }
-</style>
-
 <script>
+import Composition from '~/components/Composition'
+
 export default {
+  components: {
+    Composition
+  },
    data () {
     return {
       about: '/about'

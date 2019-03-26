@@ -1,4 +1,14 @@
-// When using ::before and ::after you'll always need these three, so we're saving two lines of code every time you use this.
+// Clearfix
+@mixin clearfix {
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+
+// When using ::before and ::after you'll always need these three, so we're saving two lines of code every time you use this.x
 @mixin pseudo($display: block, $pos: absolute, $content: ''){
    content: $content;
    display: $display;

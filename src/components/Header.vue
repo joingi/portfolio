@@ -26,7 +26,7 @@ export default {
    width: 100%;
    height: 95vh;
    background-image: linear-gradient(to right bottom,
-      rgba($color-bleGrey, 0.705),
+      rgba($color-primary-grey, 0.705),
       rgba($color-primary-dark, 0.521)),
       url('../assets/images/esja_hero.svg');
    background-size: cover;
@@ -52,39 +52,7 @@ export default {
    text-align: center;
 }
 
-.heading-primary {
-   color: $color-white;
-   text-transform: uppercase;
-   margin-bottom: 3rem;
 
-   // For smooter animation
-   backface-visibility: hidden;
-
-   &--main {
-      display: block;
-      font-size: 2rem;
-      font-weight: 400;
-      letter-spacing: 1rem;
-
-      // Animation
-      animation-name: moveInLeft;
-      animation-duration: 1.2s;
-      animation-timing-function: ease-in-out;
-   }
-
-   &--sub {
-      display: block;
-      font-size: 6rem;
-      font-weight: 400;
-      letter-spacing: .5rem;
-
-      // Animation
-      animation-name: moveInRight;
-      animation-duration: 1s;
-      animation-timing-function: ease-in;
-   }
-
-}
 
 
 

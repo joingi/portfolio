@@ -1,12 +1,24 @@
 // Colors
 $color-primary: #50BAE7;
 $color-primary-dark: #002E7F;
-$color-bleGrey: #4B7F9C;
+
+$color-primary-grey: #4B7F9C;
 $color-white: #ffffff;
 $color-black: #000000;
 
+$color-grey-light-1: #f7f7f7;
+$color-grey-dark: #777777;
+
 $color-text-dark: #333333;
 $color-backGrey: #F6F6F6;
+
+// FONT
+$font-size-default: 1.6rem;
+
+// Width
+$grid-width: 1114rem;
+$gutter-vertical: 8rem;
+$gutter-horizontal: 6rem;
 
 // Layout
 $maxBoxTextWidth: 380px;
