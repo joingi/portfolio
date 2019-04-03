@@ -45,10 +45,7 @@ export default {
 }
 
 .main-header__intro-box {
-   position: absolute;
-   top: 50%;
-   left: 50%;
-   transform: translate(-40%, -50%);
+  @include centerVertHoriz;
    text-align: center;
 }
 

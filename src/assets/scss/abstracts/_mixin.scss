@@ -7,6 +7,13 @@
   }
 }
 
+@mixin centerVertHoriz {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 
 // When using ::before and ::after you'll always need these three, so we're saving two lines of code every time you use this.x
 @mixin pseudo($display: block, $pos: absolute, $content: ''){
