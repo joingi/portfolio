@@ -18,7 +18,8 @@ module.exports = {
     {
       use: '@gridsome/source-wordpress',
       options: {
-        baseUrl: 'http://192.168.1.245/', // required
+        baseUrl: 'https://johann-api.000webhostapp.com/', // required
+        apiBase: 'wp-json',
         typeName: 'WordPress', // GraphQL schema name (Optional)
         perPage: 100, // How many posts to load from server per request (Optional)
         concurrent: 10, // How many requests to run simultaneously (Optional)

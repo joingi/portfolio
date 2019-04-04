@@ -35,8 +35,8 @@ export default {
 
    &__logo-box {
       position: absolute;
-      top: 4rem;
-      left: 4rem;
+      top: 7rem;
+      left: 6.5rem;
    }
 
    &__logo {
