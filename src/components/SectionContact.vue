@@ -1,10 +1,49 @@
 <template>
-   <section class="contact-home">
-        <article class="contact-home-wrapper section-padding">
-          <h1>Living and learning one day at the time</h1>
-          <div class="blue-underline"></div>
-          <p class="p-center">Since beginning my journey as a freelance designer nearly 8 years ago, I've done remote work for agencies, consulted for startups, and collaborated with talented people to create digital products for both business and consumer use. I'm quietly confident, naturally curious, and perpetually working on improving my chops one design problem at a time</p>
-        </article>
+   <section class="section-contact">
+        <div class="row">
+          <div class="contact">
+            <div class="contact__form">
+              <form action="#" class="form">
+                <div class="u-margin-bottom-medium">
+                  <h2 class="heading-secondary">Contact Me</h2>
+                </div>
+                <div class="form__group">
+                  <input id="name" type="text" class="form__input" placeholder="Name" required>
+                  <label for="name" class="form__label">Name</label>
+                </div>
+
+                <div class="form__group">
+                  <input id="email" type="email" class="form__input" placeholder="Email" required>
+                  <label for="email" class="form__label">Email</label>
+                </div>
+
+                <div class="form__group u-margin-bottom-medium">
+
+                  <div class="form__radio-group">
+                    <input type="radio" class="form__radio-input" id="small" name="size">
+                    <label for="small" class="form__radio-label">
+                      <span class="form__radio-button"></span>
+                      Small
+                    </label>
+                  </div>
+
+                  <div class="form__radio-group">
+                    <input type="radio" class="form__radio-input" id="large" name="size">
+                    <label for="large" class="form__radio-label">
+                      <span class="form__radio-button"></span>
+                      Large
+                    </label>
+                  </div>
+
+                </div>
+
+                <div class="form-group">
+                  <button class="btn btn-primary">Send &rarr; </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
       </section>
 </template>
 
@@ -16,48 +55,22 @@ name: 'SectionContact'
 
 <style lang="scss" scoped>
 
-.contact-home {
-   position: relative;
-   display: block;
-   min-height: 440px;
+.contact {
+   background-image: linear-gradient(105deg,
+      rgba($color-white, .9) 0%,
+      rgba($color-white, .9) 50%,
+      transparent 50%, rgba(grey, .4) 10%),
+    url('../assets/images/contact.jpg');
+   background-size: 120%;
+   border-radius: 3px;
+   box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
 
-   h1 {
-      text-align: center;
-      max-width: 440px;
-      font-size: 1.8rem;
+   height: 50rem;
 
-      @include phone {
-         padding-top: 4rem;
-      }
+   &__form {
+     width: 50%;
+     padding: 6rem;
    }
-
-   p {
-      padding: 1rem;
-      margin-top:1.2rem;
-      max-width: 760px;
-   }
-}
-
-.blue-underline {
-   width: 90px;
-   height: 4px;
-   background-color: $primaryColor;
-}
-
-.section-padding {
-   padding-top: 4rem;
-   padding-bottom: 4rem;
-}
-
-.p-center {
-   text-align: center;
-}
-
-.contact-home-wrapper {
-   display: flex;
-   flex-direction: column;
-   align-items: center
-
 }
 
 </style>

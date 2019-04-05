@@ -18,7 +18,7 @@ module.exports = {
     {
       use: '@gridsome/source-wordpress',
       options: {
-        baseUrl: 'https://johann-api.000webhostapp.com/', // required
+        baseUrl: 'https://data.johanningi.com/', // required
         apiBase: 'wp-json',
         typeName: 'WordPress', // GraphQL schema name (Optional)
         perPage: 100, // How many posts to load from server per request (Optional)
