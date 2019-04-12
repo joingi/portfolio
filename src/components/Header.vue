@@ -22,6 +22,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
 .main-header {
    width: 100%;
    height: 95vh;
@@ -32,6 +33,11 @@ export default {
    background-size: cover;
    background-position: bottom;
    clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+
+   @include respond(phone) {
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 87vh, 0 100%);
+      clip-path: polygon(0 0, 100% 0, 100% 87vh, 0 100%);
+   }
 
    &__logo-box {
       position: absolute;
@@ -45,12 +51,8 @@ export default {
 }
 
 .main-header__intro-box {
-  @include centerVertHoriz;
+   @include centerVertHoriz;
    text-align: center;
 }
-
-
-
-
 
 </style>

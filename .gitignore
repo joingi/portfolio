@@ -4,5 +4,5 @@
 src/.temp
 node_modules
 dist
-test.js
-test.css
+src/components/Tests
+test
