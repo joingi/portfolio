@@ -2,37 +2,19 @@
   <div class="layout">
     <Navigation />
     <slot/>
+    <Footer />
 
-  <footer class="footer">
-    <div class="footer__logo-box">
-      <img src="../assets/images/joi_logo.png" alt="logo" class="footer__logo">
-      <!-- <img v-bind:src="logoImg" alt="logo" class="footer__logo"> -->
-    </div>
-    <div class="row">
-      <div class="col-1-of-2">
-        <div class="footer__navigation">
-          <ul class="footer__list">
-            <li class="footer__item"><a href="#" class="footer__link">About</a></li>
-            <li class="footer__item"><a href="#" class="footer__link">About</a></li>
-            <li class="footer__item"><a href="#" class="footer__link">About</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="col-1-of-2">
-        <div class="footer__copyright">
-          <p>Lorem ipsum build by <a href="#" class="footer__link">Johann Ingi</a> dolor sit amet consectetur adipisicing elit. Delectus deserunt autem quod quae velit nihil temporibus deleniti a quas libero odio labore, itaque ab adipisci nostrum minus cupiditate ex repellendus.</p>
-        </div>
-      </div>
-    </div>
-  </footer>
   </div>
 </template>
 
 <script>
 import Navigation from '@/components/Navigation.vue';
+import Footer from '@/components/Footer.vue';
+
 export default {
   components: {
-    Navigation
+    Navigation,
+    Footer
   },
   data() {
     return {

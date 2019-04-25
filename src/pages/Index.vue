@@ -2,12 +2,27 @@
   <Layout>
     <Header />
     <div class="main main-home">
-      <SectionAbout />
-      <SectionContact />
+      <SectionAbout id="sectionAbout"/>
+      <SectionContact id="sectionContact"/>
     </div>
   </Layout>
 </template>
 
+<page-query>
+query Posts {
+    posts: allWordPressPost
+ {
+      edges {
+        node {
+          id
+          title
+          content
+          excerpt
+        }
+      }
+    }
+  }
+</page-query>
 
 <script>
 
@@ -21,7 +36,10 @@ export default {
     SectionAbout,
     SectionContact
 
-  }
+  },
+  mounted() {
+    // console.log(this.$page);
+  },
 }
 </script>
 

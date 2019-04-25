@@ -5,12 +5,13 @@
        </div>
 
       <div class="main-header__intro-box">
+         <img class="main-header__intro-box--image" src="../assets/images/johann_port.jpg" alt="">
          <h1 class="heading-primary">
-            <span class="heading-primary--main">Welcome to johanningi.com</span>
-            <span class="heading-primary--sub">My Personal Website</span>
+            <span class="heading-primary--main">Johann Ingi - web developer</span>
+            <span class="heading-primary--sub">Hello world</span>
          </h1>
 
-         <a href="#" class="btn btn--white btn--animated">Enter</a>
+         <!-- <a href="#" class="btn btn--white btn--animated">Explore</a> -->
       </div>
 </header>
 </template>
@@ -35,8 +36,8 @@ export default {
    clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
 
    @include respond(phone) {
-      -webkit-clip-path: polygon(0 0, 100% 0, 100% 87vh, 0 100%);
-      clip-path: polygon(0 0, 100% 0, 100% 87vh, 0 100%);
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 90vh, 0 100%);
+      clip-path: polygon(0 0, 100% 0, 100% 90vh, 0 100%);
    }
 
    &__logo-box {
@@ -53,6 +54,12 @@ export default {
 .main-header__intro-box {
    @include centerVertHoriz;
    text-align: center;
+
+   &--image {
+      height: 9rem;
+      border-radius: 50%;
+      margin-bottom: 2rem;
+   }
 }
 
 </style>

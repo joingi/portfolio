@@ -28,5 +28,10 @@
 </page-query>
 
 <script>
-export default {}
+export default {
+  name: 'about',
+  mounted() {
+    console.log(this.$page);
+  },
+}
 </script>

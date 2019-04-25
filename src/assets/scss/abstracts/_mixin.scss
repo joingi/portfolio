@@ -75,7 +75,7 @@ ORDER: Base+Typography > General layout > Page layout > Components
     @media (max-width: 56.25em) {@content}; // 900px
   }
   @if $brakepoint == tab-land {
-    @media (max-width: 75em) {@content}; // 1200px
+    @media (max-width: 76.3em) {@content}; // 1200px
   }
   @if $brakepoint == large-screen {
     @media (min-width: 112.5em) {@content}; // 1800px
