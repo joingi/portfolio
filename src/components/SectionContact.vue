@@ -3,33 +3,34 @@
         <div class="row">
           <div class="contact">
             <div class="contact__form">
-              <form action="#" class="form">
+              <!-- Add form to its component -->
+              <form action="https://formspree.io/joi.ingi@me.com" method="POST" class="form">
                 <div class="u-margin-bottom-medium">
-                  <h2 class="heading-secondary">Contact Me</h2><br>
-                  <small>Leave your name and emai, and I will get back to you</small>
+                  <h2 class="heading-secondary">I'll get back to you</h2><br>
+                  <small>Leave your name and email, and I'll get back to you</small>
                 </div>
                 <div class="form__group">
-                  <input id="name" type="text" class="form__input" placeholder="Name" required>
+                  <input id="name" type="text" class="form__input" name="name" placeholder="Name" required>
                   <label for="name" class="form__label">Name</label>
                 </div>
 
                 <div class="form__group">
-                  <input id="email" type="email" class="form__input" placeholder="Email" required>
+                  <input id="email" type="email" class="form__input" name="_replayTo" placeholder="Email" required>
                   <label for="email" class="form__label">Email</label>
                 </div>
 
                 <div class="form__group u-margin-bottom-medium">
 
                   <div class="form__radio-group">
-                    <input type="radio" class="form__radio-input" id="contact-1" name="size">
+                    <input type="radio" class="form__radio-input" id="contact-1" name="name" value="Work">
                     <label for="contact-1" class="form__radio-label">
-                      <span class="form__radio-button"></span>
+                      <span class="form__radio-button" value="Work"></span>
                       Work
                     </label>
                   </div>
 
                   <div class="form__radio-group">
-                    <input type="radio" class="form__radio-input" id="contact-2" name="size">
+                    <input type="radio" class="form__radio-input" id="contact-2" name="name" value="Consulting">
                     <label for="contact-2" class="form__radio-label">
                       <span class="form__radio-button"></span>
                       Consulting
@@ -37,7 +38,7 @@
                   </div>
 
                   <div class="form__radio-group">
-                    <input type="radio" class="form__radio-input" id="contact-3" name="size">
+                    <input type="radio" class="form__radio-input" id="contact-3" name="name" value="Collaboration">
                     <label for="contact-3" class="form__radio-label">
                       <span class="form__radio-button"></span>
                       Collaboration
@@ -47,7 +48,7 @@
                 </div>
 
                 <div class="form-group">
-                  <button class="btn btn-primary">Send &rarr; </button>
+                  <button type="submit" value="Send" class="btn btn-primary">Send &rarr; </button>
                 </div>
               </form>
             </div>
@@ -58,7 +59,17 @@
 
 <script>
 export default {
-name: 'SectionContact'
+name: 'SectionContact',
+/* data() {
+  return {
+    url: 'http://data.johanningi.com/wp-json/send-contact-form/v2/contact/',
+    form: {
+      full_name: '',
+      email: ''
+    },
+    errors: []
+  }
+} */
 }
 </script>
 

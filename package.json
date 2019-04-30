@@ -4,7 +4,8 @@
   "scripts": {
     "build": "gridsome build",
     "develop": "gridsome develop",
-    "explore": "gridsome explore"
+    "explore": "gridsome explore",
+    "now-build": "yarn build"
   },
   "dependencies": {
     "@gridsome/source-wordpress": "^0.1.0",

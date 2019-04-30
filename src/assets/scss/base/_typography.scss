@@ -25,13 +25,14 @@ body {
       animation-duration: 1.2s;
       animation-timing-function: ease-in-out;
 
-      @include respond(tab-port) {
-         font-size: 1.6rem;
-         letter-spacing: 0.4rem;
-      }
       @include respond(tab-land) {
          font-size: 1.6rem;
          letter-spacing: 0.4rem;
+      }
+
+      @include respond(tab-port) {
+         font-size: 1.4rem;
+         letter-spacing: 0.3rem;
       }
    }
 
@@ -47,7 +48,7 @@ body {
       animation-timing-function: ease-in;
 
       @include respond(tab-port) {
-         font-size: 4.4rem;
+         font-size: 3.1rem;
          letter-spacing: 0.2rem;
       }
    }

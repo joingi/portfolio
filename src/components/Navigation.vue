@@ -1,6 +1,6 @@
 <template>
    <div class="navigation">
-      <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+      <input type="checkbox" class="navigation__checkbox" id="navi-toggle" v-model="toggle">
       <label for="navi-toggle" class="navigation__button">
         <span class="navigation__x-icon"></span>
       </label>
@@ -8,7 +8,7 @@
       <div class="navigation__background">&nbsp;</div>
 
       <nav class="navigation__nav">
-        <ul class="navigation__list">
+        <ul class="navigation__list" v-on:click="toggleClose">
           <li class="navigation__item"><a href="#sectionAbout" class="navigation__link">About</a></li>
           <li class="navigation__item"><a href="#sectionContact" class="navigation__link">Contact</a></li>
           <li class="navigation__item"><a href="#" class="navigation__link">Portfolio</a></li>
@@ -26,6 +26,16 @@
 
 <script>
 export default {
-   name: 'Navigation'
+   name: 'Navigation',
+   data() {
+     return {
+       toggle: false
+     }
+   },
+   methods: {
+     toggleClose() {
+         this.toggle = !this.toggle;
+     }
+   }
 }
 </script>
