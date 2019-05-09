@@ -11,7 +11,7 @@
         <ul class="navigation__list" v-on:click="toggleClose">
           <li class="navigation__item"><a href="#sectionAbout" class="navigation__link">About</a></li>
           <li class="navigation__item"><a href="#sectionContact" class="navigation__link">Contact</a></li>
-          <li class="navigation__item"><a href="#" class="navigation__link">Portfolio</a></li>
+          <!-- <li class="navigation__item"><a href="#" class="navigation__link">Portfolio</a></li> -->
           <li class="navigation__item">
             <a href="https://www.linkedin.com/in/johann-ingi-8b219267/" target="blank" class="navigation__link"><svg class="navigation__svg-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" viewBox="0 0 20 20" data-tags="linkedin-with-circle"><g transform="scale(0.01953125 0.01953125)"><path d="M512 20.48c-271.462 0-491.52 220.058-491.52 491.52s220.058 491.52 491.52 491.52 491.52-220.058 491.52-491.52-220.058-491.52-491.52-491.52zM391.68 715.725h-99.533v-320.307h99.533v320.307zM341.299 356.096c-31.437 0-51.763-22.272-51.763-49.818 0-28.109 20.941-49.715 53.043-49.715s51.763 21.606 52.378 49.715c0 27.546-20.275 49.818-53.658 49.818zM755.2 715.725h-99.533v-177.51c0-41.318-14.438-69.376-50.432-69.376-27.494 0-43.827 18.995-51.046 37.274-2.662 6.502-3.328 15.718-3.328 24.883v184.678h-99.584v-218.112c0-39.987-1.28-73.421-2.611-102.195h86.477l4.557 44.493h1.997c13.107-20.89 45.21-51.712 98.918-51.712 65.485 0 114.586 43.878 114.586 138.189v189.389z" /></g></svg></a></li>
           <li class="navigation__item">
